@@ -1,5 +1,5 @@
 # use your own repo
- mkdir ~/bin 
+ mkdir $HOME/bin 
  export PATH=~/bin:$PATH 
  cp -rf repo/repo ~/bin
  chmod a+x ~/bin/repo
