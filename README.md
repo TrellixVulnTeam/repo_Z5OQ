@@ -6,7 +6,11 @@
 
 # change to your own repo
 		REPO_URL = 'https://gerrit.googlesource.com/git-repo'
-	to	REPO_URL = 'https://github.com/zSkull/repo.git/repo'	
+	to	REPO_URL = 'https://github.com/zSkull/repo.git'
+# create local .repo
+	cd $workdir
+	mkdir .repo
+	cp -rf ../repo/repo .	
 # init repo
 	repo init -u manifesturl(https://github.com/zSkull/manifest.git)
 	repo sync
