@@ -1,18 +1,14 @@
-# use your own repo
-	mkdir $HOME/bin 
-	export PATH=~/bin:$PATH 
-	cp -rf repo/repo ~/bin
-	chmod a+x ~/bin/repo
+# repo
 
-# change to your own repo
-		REPO_URL = 'https://gerrit.googlesource.com/git-repo'
-	to	REPO_URL = 'https://github.com/zSkull/repo.git'
-# create local .repo
-	cd $workdir
-	mkdir .repo
-	cp -rf ../repo/repo .	
-# init repo
-	repo init -u manifesturl(https://github.com/zSkull/manifest.git)
-	repo sync
+Repo is a tool built on top of Git.  Repo helps manage many Git repositories,
+does the uploads to revision control systems, and automates parts of the
+development workflow.  Repo is not meant to replace Git, only to make it
+easier to work with Git.  The repo command is an executable Python script
+that you can put anywhere in your path.
 
-
+* Homepage: https://code.google.com/p/git-repo/
+* Bug reports: https://code.google.com/p/git-repo/issues/
+* Source: https://code.google.com/p/git-repo/
+* Overview: https://source.android.com/source/developing.html
+* Docs: https://source.android.com/source/using-repo.html
+* [Submitting patches](./SUBMITTING_PATCHES.md)
