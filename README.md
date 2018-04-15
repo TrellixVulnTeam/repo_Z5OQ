@@ -12,3 +12,16 @@ that you can put anywhere in your path.
 * Overview: https://source.android.com/source/developing.html
 * Docs: https://source.android.com/source/using-repo.html
 * [Submitting patches](./SUBMITTING_PATCHES.md)
+
+# over the auto update
+	mkdir $workdir
+	mkdir $workdir/.repo
+	cd $workdir/.repo
+	git clone https://github.com/zSkull/repo.git
+	cd $workdir
+	repo init -u https://github.com/zSkull/manifest.git
+
+# you may need to set your mail and name
+	git config --global user.mail "***"
+	git config --global user.name "***"
+
